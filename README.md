@@ -13,7 +13,7 @@ This repository contains the MATLAB code, simulation data, and results for my fi
 ## Folder Structure
 - `/IEEE30Bus/` — MATLAB scripts and data for IEEE 30-bus system
 - `/IEEE118Bus/` — MATLAB scripts and data for IEEE 118-bus system
-- `/OptimizationAlgorithms/` — Metaheuristic algorithms (SPBO, etc.)
+- `/OptimizationAlgorithms/` — Metaheuristic algorithms (SPBO,SSA)
 - `/docs/` — Project reports and research papers
 
 ## How to Run
