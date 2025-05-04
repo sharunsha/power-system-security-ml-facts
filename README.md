@@ -7,7 +7,7 @@ This repository contains the MATLAB code, simulation data, and results for my fi
 - Simulated **IEEE 30-bus** and **IEEE 118-bus** test systems
 - Developed **Hybrid Line Stability Ranking Index (HLSRI)** for contingency analysis
 - Implemented **Random Forest** and **Gradient Boosting** classifiers (95-96% accuracy)
-- Optimized FACTS devices placement (**UPFC**, **IPFC**) using **Student Psychology Based Optimization (SPBO)**
+- Optimized FACTS devices placement (**UPFC**, **IPFC**) using **Student Psychology Based Optimization (SPBO) & Sparrow Search Algorithm (SSA)**
 - Achieved significant improvements in power loss reduction and voltage stability
 
 ## Folder Structure
