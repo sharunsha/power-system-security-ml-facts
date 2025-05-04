@@ -6,7 +6,7 @@ switch F
         fobj = @ceed;
         lb =data(:,4)';   % Lower bound
         ub = data(:,5)';  % Upper bound
-        dim=6;
+        dim=54;
 end
 end
 

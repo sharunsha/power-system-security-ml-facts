@@ -2,6 +2,7 @@
 %  on the screen.
 
 
+
 %clc
 disp(tech)
 fprintf('                      Maximum Power Mismatch = %g \n', maxerror)
@@ -11,7 +12,7 @@ head =['    Bus  Voltage  Angle    ------Load------    ---Generation---   Inject
        '                                                                          '];
 disp(head)
 for n=1:nbus
-     fprintf(' %5g', n), fprintf(' %7.5f', Vm(n)),
+     fprintf(' %5g', n), fprintf(' %7.3f', Vm(n)),
      fprintf(' %8.3f', deltad(n)), fprintf(' %9.3f', Pd(n)),
      fprintf(' %9.3f', Qd(n)),  fprintf(' %9.3f', Pg(n)),
      fprintf(' %9.3f ', Qg(n)), fprintf(' %8.3f\n', Qsh(n))

@@ -1,6 +1,6 @@
 %  This program is used in conjunction with lfgauss or lf Newton
 %  for the computation of line flow and line losses.
-SLT = 0;
+SLT = 0;YY=0;
 count = 1;
 count1 = 1;
 count2=1;
@@ -15,8 +15,8 @@ for n = 1:nbus
         if busprt == 0
             fprintf('   \n'), fprintf('%6g', n), fprintf('      %9.4f', P(n)*basemva)
             fprintf('%9.4f', Q(n)*basemva), fprintf('%9.4f\n', abs(S(n)*basemva))
-
             busprt = 1;
+              
         end
         if nl(L)==n
             k = nr(L);
@@ -46,7 +46,7 @@ for n = 1:nbus
 %             count = count + 1;
             SL = Snk + Skn;
             SLT = SLT + SL;
-            
+          
         end
         
             
@@ -55,8 +55,7 @@ for n = 1:nbus
             fprintf('%9.4f', real(Snk)), fprintf('%9.4f', imag(Snk))
             fprintf('%9.4f', abs(Snk)),
             fprintf('%9.4f', real(SL)),
-            
-         
+                     
             if nl(L) ==n && a(L) ~= 1
                 fprintf('%9.4f', imag(SL)), fprintf('%9.4f\n', a(L))
             else
@@ -67,5 +66,5 @@ for n = 1:nbus
 end
 SLT = SLT/2;
 fprintf('   \n'), fprintf('    Total loss                         ')
-fprintf('%9.4f', real(SLT)), fprintf('%9.4f\n', imag(SLT))
+fprintf('%9.4f\t', real(SLT)), fprintf('%9.4f\n', imag(SLT))
 % clear Ik In SL SLT Skn

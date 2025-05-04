@@ -3,7 +3,7 @@ clc
 clear variables
 
 tic
-Demand=[4454.1];
+Demand=[4242];
 g=[];
 for xx=1:length(Demand)
 global data Pd data1 B

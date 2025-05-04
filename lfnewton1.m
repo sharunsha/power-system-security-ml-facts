@@ -6,7 +6,7 @@ nbus = length(busdata(:,1));
 for k=1:nbus
 n=busdata(k,1);
 kb(n)=busdata(k,2); Vm(n)=busdata(k,3); delta(n)=busdata(k, 4);
-Pd(n)= (0.9)*busdata(k,5); Qd(n)=(0.9)*busdata(k,6); Pg(n)=busdata(k,7); Qg(n) = busdata(k,8);
+Pd(n)=(0.9)*busdata(k,5); Qd(n)=(0.9)*busdata(k,6); Pg(n)=busdata(k,7); Qg(n) = busdata(k,8);
 Qmin(n)=busdata(k, 9); Qmax(n)=busdata(k, 10);
 Qsh(n)=busdata(k, 11);
     if Vm(n) <= 0  Vm(n) = 1.0; V(n) = 1 + j*0;
