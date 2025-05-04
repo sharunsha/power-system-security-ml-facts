@@ -24,7 +24,7 @@ This repository contains the MATLAB code, simulation data, and results for my fi
 
 ## Requirements
 - MATLAB R2020a or higher
-- Optimization Toolbox (optional for SPBO)
+- Optimization Toolbox (optional for SPBO SSA)
 - Machine Learning Toolbox
 
 ## License
